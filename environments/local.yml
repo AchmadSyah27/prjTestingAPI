@@ -1,0 +1,6 @@
+name: local
+variables:
+  - name: local
+    value: http://localhost:3000/
+  - name: token
+    value: ""

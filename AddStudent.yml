@@ -1,0 +1,31 @@
+info:
+  name: AddStudent
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: "{{url}}students"
+  body:
+    type: json
+    data: |-
+      {
+        "nis": "2024006",
+        "name": "Andrian Soedjadi",
+        "kelas": "XII-A",
+        "jurusan": "IPA",
+        "email": "andrian@sekolah.id",
+        "phone": "081234567895",
+        "alamat": "Jl. Contoh No.6",
+        "tanggal_lahir": "2007-01-15",
+        "jenis_kelamin": "L"
+      }
+  auth:
+    type: bearer
+    token: "{{token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
