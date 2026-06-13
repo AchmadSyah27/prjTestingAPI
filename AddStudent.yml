@@ -5,12 +5,12 @@ info:
 
 http:
   method: POST
-  url: "{{url}}students"
+  url: "{{local}}students"
   body:
     type: json
     data: |-
       {
-        "nis": "2024006",
+        "nis": "2024007",
         "name": "Andrian Soedjadi",
         "kelas": "XII-A",
         "jurusan": "IPA",

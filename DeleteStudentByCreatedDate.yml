@@ -1,14 +1,11 @@
 info:
-  name: DeleteStudent
+  name: DeleteStudentByCreatedDate
   type: http
-  seq: 4
+  seq: 5
 
 http:
   method: DELETE
-  url: "{{url}}students/name/Siti Rahayu"
-  body:
-    type: json
-    data: ""
+  url: "{{local}}students/date/2026-06-12"
   auth:
     type: bearer
     token: "{{token}}"
